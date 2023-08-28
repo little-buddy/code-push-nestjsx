@@ -1,8 +1,8 @@
 {
-  "name": "awesome-nestjs-boilerplate",
-  "version": "10.0.0",
-  "description": "Awesome NestJS Boilerplate, Typescript, Postgres, TypeORM",
-  "author": "Narek Hakobyan <narek.hakobyan.07@gmail.com>",
+  "name": "code-push-nestjs",
+  "version": "5.7.1",
+  "description": "Refactor code with nestjs based on code-push-server@5.7.1",
+  "author": "buddy <litoubuddy@gmail.com>",
   "private": true,
   "license": "MIT",
   "scripts": {
