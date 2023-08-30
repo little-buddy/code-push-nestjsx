@@ -1,4 +1,5 @@
 import { Column, Entity } from 'typeorm';
+
 import { UniEntity } from './abstract';
 
 @Entity('collaborators')

@@ -39,7 +39,10 @@ module.exports = {
     'n/no-extraneous-import': 'off',
     'n/no-missing-import': 'off',
     'canonical/filename-match-exported': 'error',
-    'canonical/no-unused-exports': ['error', {tsConfigPath: './tsconfig.eslint.json'}],
+    'canonical/no-unused-exports': [
+      'error',
+      { tsConfigPath: './tsconfig.eslint.json' },
+    ],
     // 'canonical/id-match': [
     //   'error',
     //   '(^[A-Za-z]+(?:[A-Z][a-z]*)*\\d*$)|(^[A-Z]+(_[A-Z]+)*(_\\d$)*$)|(^(_|\\$)$)',
@@ -60,10 +63,18 @@ module.exports = {
     'unicorn/prefer-module': 'off',
     'unicorn/expiring-todo-comments': 'off',
     'sonarjs/no-duplicate-string': 'off',
-    'import/no-unresolved': ['error', {ignore: ['^@hr-drone\/*']}],
-    'import/no-duplicates': ['error', {'prefer-inline': true}],
+    'import/no-unresolved': ['error', { ignore: ['^@hr-drone/*'] }],
+    'import/no-duplicates': ['error', { 'prefer-inline': true }],
     'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
-    'prettier/prettier': ['error', {singleQuote: true, trailingComma: 'all', tabWidth: 2, bracketSpacing: true}],
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        trailingComma: 'all',
+        tabWidth: 2,
+        bracketSpacing: true,
+      },
+    ],
     'import/newline-after-import': 'error',
     /**
      * plugin:simple-import-sort
@@ -74,36 +85,34 @@ module.exports = {
      * plugin:typescript-eslint
      */
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      {argsIgnorePattern: '^_'},
-    ],
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     'max-params': ['error', 7],
-    '@typescript-eslint/array-type': ['error', {default: 'array-simple'}],
+    '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/ban-types': [
       'error',
       {
         types: {
-          'Object': {
+          Object: {
             message: 'Avoid using the `Object` type. Did you mean `object`?',
           },
-          'Function': {
-            message: 'Avoid using the `Function` type. Prefer a specific function type, like `() => void`.',
+          Function: {
+            message:
+              'Avoid using the `Function` type. Prefer a specific function type, like `() => void`.',
           },
-          'Boolean': {
+          Boolean: {
             message: 'Avoid using the `Boolean` type. Did you mean `boolean`?',
             fixWith: 'boolean',
           },
-          'Number': {
+          Number: {
             message: 'Avoid using the `Number` type. Did you mean `number`?',
             fixWith: 'number',
           },
-          'Symbol': {
+          Symbol: {
             message: 'Avoid using the `Symbol` type. Did you mean `symbol`?',
             fixWith: 'symbol',
           },
-          'String': {
+          String: {
             message: 'Avoid using the `String` type. Did you mean `string`?',
             fixWith: 'string',
           },
@@ -111,7 +120,7 @@ module.exports = {
             message: 'Use Record<K, V> instead',
             fixWith: 'Record<K, V>',
           },
-          'object': {
+          object: {
             message: 'Use Record<K, V> instead',
             fixWith: 'Record<K, V>',
           },
@@ -157,7 +166,7 @@ module.exports = {
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/consistent-type-imports': [
       'error',
-      {prefer: 'type-imports', fixStyle: 'inline-type-imports'},
+      { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
     ],
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/restrict-template-expressions': 'off',
@@ -228,24 +237,24 @@ module.exports = {
     'no-await-in-loop': 'error',
     'padding-line-between-statements': [
       'error',
-      {blankLine: 'always', prev: '*', next: 'return'},
-      {blankLine: 'always', prev: '*', next: 'try'},
-      {blankLine: 'always', prev: 'try', next: '*'},
-      {blankLine: 'always', prev: '*', next: 'block-like'},
-      {blankLine: 'always', prev: 'block-like', next: '*'},
-      {blankLine: 'always', prev: '*', next: 'throw'},
-      {blankLine: 'always', prev: 'var', next: '*'},
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: '*', next: 'try' },
+      { blankLine: 'always', prev: 'try', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'block-like' },
+      { blankLine: 'always', prev: 'block-like', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'throw' },
+      { blankLine: 'always', prev: 'var', next: '*' },
     ],
     'arrow-body-style': 'error',
     'arrow-parens': ['error', 'always'],
-    'complexity': 'off',
+    complexity: 'off',
     'no-restricted-imports': [
       'error',
       {
         paths: [
           {
             name: 'rxjs/Rx',
-            message: 'Please import directly from \'rxjs\' instead',
+            message: "Please import directly from 'rxjs' instead",
           },
         ],
       },
@@ -256,12 +265,12 @@ module.exports = {
     'no-else-return': 'error',
     'no-implicit-coercion': 'error',
     'constructor-super': 'error',
-    'yoda': 'error',
-    'strict': ['error', 'never'],
-    'curly': 'error',
+    yoda: 'error',
+    strict: ['error', 'never'],
+    curly: 'error',
     'dot-notation': 'error',
     'eol-last': 'error',
-    'eqeqeq': ['error', 'smart'],
+    eqeqeq: ['error', 'smart'],
     'guard-for-in': 'error',
     'id-match': 'error',
     'max-classes-per-file': 'off',
@@ -339,9 +348,14 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-object-spread': 'error',
     'quote-props': ['error', 'consistent-as-needed'],
-    'radix': 'error',
+    radix: 'error',
     'use-isnan': 'error',
     'valid-typeof': 'off',
     'space-before-function-paren': 'off',
+
+    // custom
+    'promise/always-return': 'off',
+    'canonical/no-unused-exports': 'off',
+    'import/no-unresolved': 'off',
   },
 };

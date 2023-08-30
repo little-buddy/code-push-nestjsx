@@ -1,4 +1,5 @@
 import { Column } from 'typeorm';
+
 import { UniEntity } from './abstract';
 
 export class PackagesDiff extends UniEntity {

@@ -1,3 +1,5 @@
+/* eslint-disable */
+// @ts-nocheck
 /**
  * @author qiniu
  * @see https://github.com/qiniu/qetag/blob/master/qetag.js
